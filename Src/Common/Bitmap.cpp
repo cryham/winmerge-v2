@@ -85,39 +85,44 @@ CBitmap *GetDarkenedBitmap(CDC *pDC, CBitmap *pBitmap)
 	std::unique_ptr<BYTE[]> pbuf(new BYTE[bi.bmiHeader.biSizeImage]);
 	GetDIBits(dcMem.m_hDC, (HBITMAP)*pBitmapDarkened, 0, bm.bmHeight, pbuf.get(), &bi, DIB_RGB_COLORS);
 
-	int x;
+	const BYTE br = 40, bg = 40, bb = 60;  ///+ fill color ..
+	const BYTE r = 120, g = 120, b = 240;  ///+ frame color ..
+	int x, c;
 	for (x = 0; x < bm.bmWidth; x++)
 	{
-		double b = 0.70 + (0.20 * sin(acos((double)x/bm.bmWidth*2.0-1.0)));
+		//double b = 0.70 + (0.20 * sin(acos((double)x/bm.bmWidth*2.0-1.0)));
 		for (int y = 1; y < bm.bmHeight-1; y++)
 		{
 			int i = x * 4 + y * bm.bmWidth * 4;
-			pbuf[i  ] = (BYTE)(pbuf[i] * 0.95);
-			pbuf[i+1] = (BYTE)(pbuf[i+1] * b);
-			pbuf[i+2] = (BYTE)(pbuf[i+2] * b);
+			//pbuf[i  ] = (BYTE)(pbuf[i] * 0.95);
+			//pbuf[i+1] = (BYTE)(pbuf[i+1] * b);
+			//pbuf[i+2] = (BYTE)(pbuf[i+2] * b);
+			c = pbuf[i]  + bb;  pbuf[i  ] = min(c, 255);
+			c = pbuf[i+1]+ bg;  pbuf[i+1] = min(c, 255);
+			c = pbuf[i+2]+ br;  pbuf[i+2] = min(c, 255);
 		}
 	}
-	for (x = 0; x < bm.bmWidth; x++)
+	for (x = 0; x < bm.bmWidth; x++)  /// frame --
 	{
 		int i = x * 4 + 0 * bm.bmWidth * 4;
-		pbuf[i  ] = (BYTE)(pbuf[i] * 0.95);
-		pbuf[i+1] = (BYTE)(pbuf[i+1] * 0.8);
-		pbuf[i+2] = (BYTE)(pbuf[i+2] * 0.8);
+		pbuf[i  ] = b;
+		pbuf[i+1] = g;
+		pbuf[i+2] = r;
 		i = x * 4 + (bm.bmHeight-1) * bm.bmWidth * 4;
-		pbuf[i  ] = (BYTE)(pbuf[i] * 0.95);
-		pbuf[i+1] = (BYTE)(pbuf[i+1] * 0.8);
-		pbuf[i+2] = (BYTE)(pbuf[i+2] * 0.8);
+		pbuf[i  ] = b;
+		pbuf[i+1] = g;
+		pbuf[i+2] = r;
 	}
-	for (int y = 0; y < bm.bmHeight; y++)
+	for (int y = 0; y < bm.bmHeight; y++)  /// frame |
 	{
 		int i = 0 * 4 + y * bm.bmWidth * 4;
-		pbuf[i  ] = (BYTE)(pbuf[i] * 0.95);
-		pbuf[i+1] = (BYTE)(pbuf[i+1] * 0.9);
-		pbuf[i+2] = (BYTE)(pbuf[i+2] * 0.9);
+		pbuf[i  ] = b;
+		pbuf[i+1] = g;
+		pbuf[i+2] = r;
 		i = (bm.bmWidth-1) * 4 + y * bm.bmWidth * 4;
-		pbuf[i  ] = (BYTE)(pbuf[i] * 0.95);
-		pbuf[i+1] = (BYTE)(pbuf[i+1] * 0.9);
-		pbuf[i+2] = (BYTE)(pbuf[i+2] * 0.9);
+		pbuf[i  ] = b;
+		pbuf[i+1] = g;
+		pbuf[i+2] = r;
 	}
 
 	SetDIBits(dcMem.m_hDC, (HBITMAP)*pBitmapDarkened, 0, bm.bmHeight, pbuf.get(), &bi, DIB_RGB_COLORS);

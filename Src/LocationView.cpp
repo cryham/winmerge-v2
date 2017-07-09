@@ -73,7 +73,7 @@ enum LOCBAR_TYPE
 	BAR_YAREA,		/**< Y-Coord in bar area */
 };
 
-const COLORREF clrBackground = RGB(0xe4, 0xe4, 0xf4);
+const COLORREF clrBackground = RGB(0x00, 0x00, 0x00); ///+ RGB(0xe4, 0xe4, 0xf4);
 
 /////////////////////////////////////////////////////////////////////////////
 // CLocationView
@@ -470,11 +470,11 @@ void CLocationView::OnDraw(CDC* pDC)
 				{
 					CRect r(m_bar[pane].right - 1, (*iter).top_coord, m_bar[pane + 1].left + 1, (*iter).bottom_coord);
 					if ((pane == 0 && (*iter).op == OP_3RDONLY) || (pane == 1 && (*iter).op == OP_1STONLY))
-						DrawRect(&dc, r, RGB(255, 255, 127), false);
+						DrawRect(&dc, r, RGB(100, 100, 60), false);  ///+
 					else if ((*iter).op == OP_2NDONLY)
-						DrawRect(&dc, r, RGB(127, 255, 255), false);
+						DrawRect(&dc, r, RGB(60, 100, 100), false);
 					else if ((*iter).op == OP_DIFF)
-						DrawRect(&dc, r, RGB(255, 0, 0), false);
+						DrawRect(&dc, r, RGB(100, 0, 0), false);
 				}
 				// Draw block
 				m_view[pane]->GetLineColors2((*iter).top_line, 0, cr[pane], crt, bwh);
