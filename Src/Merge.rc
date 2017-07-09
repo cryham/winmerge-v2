@@ -170,7 +170,7 @@ BEGIN
     END
     POPUP "&Edit"
     BEGIN
-        MENUITEM "&Options...",                 ID_OPTIONS
+        MENUITEM "&Options...\tF12",                 ID_OPTIONS
     END
     POPUP "&View"
     BEGIN
@@ -400,7 +400,7 @@ BEGIN
             MENUITEM "&Mac (CR)",                   ID_EOL_TO_MAC
         END
         MENUITEM SEPARATOR
-        MENUITEM "&Merge Mode\tF9",             ID_FILE_MERGINGMODE
+        MENUITEM "&Merge Mode\tF11",             ID_FILE_MERGINGMODE
         MENUITEM SEPARATOR
         MENUITEM "Re&load\tCtrl+F5",            ID_RESCAN
         MENUITEM "&File Encoding...",           ID_FILE_ENCODING
@@ -831,7 +831,8 @@ BEGIN
     VK_F5,          ID_RESCAN,              VIRTKEY, CONTROL, NOINVERT
     VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
     VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
-    VK_F9,          ID_FILE_MERGINGMODE,    VIRTKEY, NOINVERT
+    VK_F11,          ID_FILE_MERGINGMODE,    VIRTKEY, NOINVERT
+    VK_F12,          ID_OPTIONS,             VIRTKEY, NOINVERT
     VK_HOME,        ID_FIRSTDIFF,           VIRTKEY, ALT, NOINVERT
     VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
     VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
@@ -2340,7 +2341,7 @@ END
 // EDITOR : MERGE MODE
 STRINGTABLE
 BEGIN
-    IDS_MERGE_MODE          "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+    IDS_MERGE_MODE          "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 END
 
 
