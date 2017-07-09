@@ -113,9 +113,9 @@ const TCHAR *MergeCmdLineInfo::SetOption(const TCHAR *q, const String& key, cons
  * @param [in] q Points to the beginning of the command line.
  */
 MergeCmdLineInfo::MergeCmdLineInfo(const TCHAR *q):
-	m_nCmdShow(SHOWNORMAL),
+	m_nCmdShow(MAXIMIZE),  ///+
 	m_bClearCaseTool(false),
-	m_bEscShutdown(false),
+	m_bEscShutdown(true),  ///+
 	m_bExitIfNoDiff(Disabled),
 	m_bRecurse(false),
 	m_bNonInteractive(false),
