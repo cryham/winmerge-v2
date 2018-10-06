@@ -249,10 +249,10 @@ msgstr "종료(&X)"
 msgid "&Edit"
 msgstr "편집(&E)"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "옵션(&O)..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -279,7 +279,7 @@ msgstr "크게(&B)"
 msgid "&Huge"
 msgstr "매우 크게(&H)"
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "상태 표시줄(&S)"
@@ -294,7 +294,7 @@ msgstr "탭 도구 모음(&B)"
 msgid "&Tools"
 msgstr "도구(&T)"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "필터(&F)"
@@ -438,6 +438,11 @@ msgstr "파일 인코딩(&C)..."
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "전체 선택(&A)\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "옵션(&O)..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -649,10 +654,10 @@ msgstr "인쇄 미리보기(&R)"
 msgid "&Convert Line Endings to"
 msgstr "줄 끝 변환(&C)"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "병합 모드\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -770,7 +775,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "축소(&O)\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "보통(&N)\tCtrl+*"
@@ -830,7 +835,7 @@ msgstr "전체와 0-9 줄 토글\tCtrl+D"
 msgid "&Lock Panes"
 msgstr "창 잠금(&L)"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "공백 보기(&V)"
@@ -1230,7 +1235,7 @@ msgstr "오른쪽 쉘 메뉴"
 msgid "Copy"
 msgstr "복사"
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "전체 경로 복사(&C)"
@@ -1260,7 +1265,7 @@ msgstr "자동 prediffer"
 msgid "G&oto Diff"
 msgstr "차이점으로 이동(&O)"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "이동된 블럭 없음(&N)"
@@ -1310,7 +1315,7 @@ msgstr "케리지 리턴 차이 무시하기 (윈도우/유닉스/맥)(&R)"
 msgid "&Include Subfolders"
 msgstr "하위 폴더 포함하기(&I)"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "비교 방법(&C):"
@@ -1790,7 +1795,7 @@ msgstr "삭제한 파일은 휴지통으로 보내기(&P)"
 msgid "&External editor:"
 msgstr "외부 편집기(&E):"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "필터 폴더(&F):"
@@ -2075,7 +2080,7 @@ msgstr "줄 차이점 채색"
 msgid "View line differences"
 msgstr "줄 차이점 보기"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "문자 단위(&C)"
@@ -2135,7 +2140,7 @@ msgstr "왼쪽 파일"
 msgid "&Save changes"
 msgstr "변경사항 저장(&S)"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "변경사항 취소(&D)"
@@ -2593,7 +2598,7 @@ msgstr "파일 백업"
 msgid "Create backup files in:"
 msgstr "백업 파일 만들기:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "폴더 비교에서(&F)"
@@ -2668,7 +2673,7 @@ msgstr "아니오"
 msgid "Plugins"
 msgstr "플러그인"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "플러그인 사용"
@@ -2763,7 +2768,7 @@ msgstr "Frhed 설정"
 msgid "View &Settings..."
 msgstr "보기 설정(&S)..."
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr "바이너리 모드(&B)..."
@@ -3243,7 +3248,7 @@ msgstr ""
 "\n"
 "모든 비교를 갱신하고 싶지 않으면, 이제 아니오를 선택하고 나중에 비교를 갱신할 수 있습니다."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "SS.EXE 경로(&P):"
@@ -4463,10 +4468,10 @@ msgstr "%1개 문자열을 바꿨습니다."
 msgid "Cannot find string \"%s\""
 msgstr "다음 문자열을 찾을 수 없습니다: \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
-msgstr "지금 병합 모드에 진입 중입니다. 병합 모드를 끄고 싶으면 F9 키를 누르세요"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
+msgstr ""
 
 #: Merge.rc:5E0C549
 #, c-format

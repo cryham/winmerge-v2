@@ -244,10 +244,10 @@ msgstr "Изла&з"
 msgid "&Edit"
 msgstr "Ур&еди"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "Изб&ор..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -274,7 +274,7 @@ msgstr "&Велика"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "&Статусна трака"
@@ -289,7 +289,7 @@ msgstr "Тра&ка језичака"
 msgid "&Tools"
 msgstr "Алатке"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Филтери..."
@@ -433,6 +433,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Изабери &све\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "Изб&ор..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -644,10 +649,10 @@ msgstr "Преглед пре штампа&ња"
 msgid "&Convert Line Endings to"
 msgstr "Заврши ред према"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "&Начин поређења\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -765,7 +770,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "Ума&њи\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "Изворно\tCtrl+*"
@@ -825,7 +830,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "Закључај табле"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "Прика&з размака"
@@ -1225,7 +1230,7 @@ msgstr "Десни изборник /љуске/"
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "&Умножи путању"
@@ -1255,7 +1260,7 @@ msgstr "Аутоматски дефиниши поређење"
 msgid "G&oto Diff"
 msgstr "Иди &на разлику"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "&Не премештај групе"
@@ -1305,7 +1310,7 @@ msgstr "Занемари &разлике ознака завршетка реда (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "Укључи и потфасцикле"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr ""
@@ -1785,7 +1790,7 @@ msgstr "Пошаљи избри&сано у корпу"
 msgid "&External editor:"
 msgstr "Спољњи ур&еђивач:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "Фасцикла филтера:"
@@ -2070,7 +2075,7 @@ msgstr "Обоји различите редове "
 msgid "View line differences"
 msgstr "Приказ различитих редова"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "Ранг &знака"
@@ -2130,7 +2135,7 @@ msgstr "Лева датотека"
 msgid "&Save changes"
 msgstr "&Сачувај промене"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Одустани од измена"
@@ -2584,7 +2589,7 @@ msgstr "Резервне датотеке"
 msgid "Create backup files in:"
 msgstr "Направи резервне датотеке у:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "Упореди &фасциклу"
@@ -2659,7 +2664,7 @@ msgstr "Не"
 msgid "Plugins"
 msgstr "Додаци"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "Омогући додатк&е"
@@ -2754,7 +2759,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3214,7 +3219,7 @@ msgstr ""
 "\n"
 "Ако изаберете /Не/ то можете и касније урадити"
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "&Путања до SS.EXE:"
@@ -4433,9 +4438,9 @@ msgstr "Замењен %1 појам(а)"
 msgid "Cannot find string \"%s\""
 msgstr "Не могу наћи појам \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

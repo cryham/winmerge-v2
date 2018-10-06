@@ -246,10 +246,10 @@ msgstr "結束(&X)"
 msgid "&Edit"
 msgstr "編輯(&E)"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "選項(&O)..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -276,7 +276,7 @@ msgstr "大圖示(&B)"
 msgid "&Huge"
 msgstr "超大圖示(&H)"
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "狀態列(&S)"
@@ -291,7 +291,7 @@ msgstr "頁籤列(&B)"
 msgid "&Tools"
 msgstr "工具(&T)"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "篩選器(&F)..."
@@ -437,6 +437,11 @@ msgstr "檔案編碼(&C)..."
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "全選(&A)\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "選項(&O)..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -648,10 +653,10 @@ msgstr "預覽列印(&R)"
 msgid "&Convert Line Endings to"
 msgstr "轉換換行字元(&C)"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "開/關合併模式(&M)\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -769,7 +774,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "推遠(&O)\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "恢復原始(&N)\tCtrl+*"
@@ -829,7 +834,7 @@ msgstr "切換全部行和 0-9 行(&T)\tCtrl+D"
 msgid "&Lock Panes"
 msgstr "鎖住窗格(&L)"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "檢視空白和跳格(&V)"
@@ -1233,7 +1238,7 @@ msgstr "右邊介面選單"
 msgid "Copy"
 msgstr "複製"
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "複製完整路徑(&C)"
@@ -1263,7 +1268,7 @@ msgstr "自動先行處理器"
 msgid "G&oto Diff"
 msgstr "至差異區塊(&O)"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "不顯示移位區塊(&N)"
@@ -1313,7 +1318,7 @@ msgstr "忽略換行字元之差異(Windows/Unix/Mac)(&R)"
 msgid "&Include Subfolders"
 msgstr "包括子資料夾(&I)"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "檔案比較方式(&C)："
@@ -1795,7 +1800,7 @@ msgstr "刪除檔送到資源回收筒(&S)"
 msgid "&External editor:"
 msgstr "外部編輯器(&E)："
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "資料夾篩選器(&F)："
@@ -2080,7 +2085,7 @@ msgstr "行內差異著色"
 msgid "View line differences"
 msgstr "檢視行內差異"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "字元階層(&C)"
@@ -2140,7 +2145,7 @@ msgstr "左邊檔案"
 msgid "&Save changes"
 msgstr "儲存變更(&S)"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "放棄變更(&D)"
@@ -2595,7 +2600,7 @@ msgstr "備份檔案"
 msgid "Create backup files in:"
 msgstr "產生備份檔於："
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "比較資料夾時(&F)"
@@ -2670,7 +2675,7 @@ msgstr "否"
 msgid "Plugins"
 msgstr "外掛"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "啟用外掛(&E)"
@@ -2765,7 +2770,7 @@ msgstr "Frhed 設定"
 msgid "View &Settings..."
 msgstr "顯示設定(&S)..."
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr "二進制模式(&B)..."
@@ -3226,7 +3231,7 @@ msgstr ""
 "\n"
 "如果不想現在重整，請選「否」。"
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "至 SS.EXE 的路徑(&P)"
@@ -4444,10 +4449,10 @@ msgstr "已取代 %1 個字串。"
 msgid "Cannot find string \"%s\""
 msgstr "找不到 \"%s\" 字串"
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
-msgstr "你已經進入合併模式。如果你想要關閉合併模式，請按 F9"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
+msgstr ""
 
 #: Merge.rc:5E0C549
 #, c-format

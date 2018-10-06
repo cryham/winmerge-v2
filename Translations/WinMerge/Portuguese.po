@@ -245,10 +245,10 @@ msgstr "&Sair"
 msgid "&Edit"
 msgstr "&Editar"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "&Opções..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -275,7 +275,7 @@ msgstr "&Grande"
 msgid "&Huge"
 msgstr "&Enorme"
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "Barra de Esta&do"
@@ -290,7 +290,7 @@ msgstr "Barra de Tabulações"
 msgid "&Tools"
 msgstr "&Ferramentas"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Filtros..."
@@ -434,6 +434,11 @@ msgstr "A Codificar Ficheiro..."
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Seleccionar &Tudo\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "&Opções..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -645,10 +650,10 @@ msgstr "Pré-&visualizar"
 msgid "&Convert Line Endings to"
 msgstr "Converter Finais de Linha para"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "Modo Combinar\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -766,7 +771,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "Zoom &Reduzir\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Normal\tCtrl+*"
@@ -826,7 +831,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "Trancar Janelas"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "&Ver Espaços"
@@ -1226,7 +1231,7 @@ msgstr "Menu Shell da Direita"
 msgid "Copy"
 msgstr "Copiar"
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "Copiar Localização Completa"
@@ -1256,7 +1261,7 @@ msgstr "Pré-diferenciação manual"
 msgid "G&oto Diff"
 msgstr "Ir para Diferença"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "Não Mostrar Blocos Movidos"
@@ -1306,7 +1311,7 @@ msgstr "Igno&rar diferentes tipos de ficheiros (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "Incluir Sub-ficheiros"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "&Método de comparação"
@@ -1786,7 +1791,7 @@ msgstr "Enviar ficheiros eliminados para a Reciclagem"
 msgid "&External editor:"
 msgstr "com editor &externo:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "Filtro de pasta:"
@@ -2071,7 +2076,7 @@ msgstr "Cor da Diferença de Linha"
 msgid "View line differences"
 msgstr "Ver diferenças de linha"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "A nível do caracter"
@@ -2131,7 +2136,7 @@ msgstr "Ficheiro da esquerda"
 msgid "&Save changes"
 msgstr "&Guardar alterações"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "Rejeitar alterações"
@@ -2581,7 +2586,7 @@ msgstr "Fazer cópia de Ficheiros"
 msgid "Create backup files in:"
 msgstr "Criar cópia de ficheiros em:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "Comparação de pastas"
@@ -2656,7 +2661,7 @@ msgstr "Não"
 msgid "Plugins"
 msgstr "Plugins"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "Activar plugins"
@@ -2751,7 +2756,7 @@ msgstr "Definições"
 msgid "View &Settings..."
 msgstr "Ver &Definições"
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr "Modo Binário"
@@ -3131,7 +3136,7 @@ msgstr "Expressão regular"
 msgid "Filters were updated. Do you want to refresh all open folder compares?\n\nIf you do not want to refresh all compares now you can select No and refresh compares later."
 msgstr "Os filtros foram actualizados. Deseja actualizar as comparações de todas as pastas abertas?\n\nSe não quiser actualizar todas as comparações agora, pode seleccionar Não e actualizar a comparação mais tarde."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "Patch para SS.EXE:"
@@ -4202,10 +4207,10 @@ msgstr "Substituída(s) %1 string(s)."
 msgid "Cannot find string \"%s\""
 msgstr "Impossível localizar string \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
-msgstr "Está a entrar no Modo Combinado. Se pretende desligar o Modo Combinado, pressione a tecla F9"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
+msgstr ""
 
 #: Merge.rc:5E0C549
 #, c-format

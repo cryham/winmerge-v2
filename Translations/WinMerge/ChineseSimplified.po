@@ -245,10 +245,10 @@ msgstr "退出(&X)"
 msgid "&Edit"
 msgstr "编辑(&E)"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "选项(&O)..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -275,7 +275,7 @@ msgstr "大(&B)"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "状态栏(&S)"
@@ -290,7 +290,7 @@ msgstr "标签栏(&B)"
 msgid "&Tools"
 msgstr "工具(&T)"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "过滤器(&F)..."
@@ -434,6 +434,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "选择所有(&A)\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "选项(&O)..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -645,10 +650,10 @@ msgstr "打印预览(&W)"
 msgid "&Convert Line Endings to"
 msgstr "将行分隔符转换为(&C)"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "合并模式(&M)\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -766,7 +771,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "缩小(&O)\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "正常大小(&N)\tCtrl+*"
@@ -826,7 +831,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "锁定窗格(&L)"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "显示空白和制表符(&V)"
@@ -1226,7 +1231,7 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "复制全名(&C)"
@@ -1256,7 +1261,7 @@ msgstr "自动"
 msgid "G&oto Diff"
 msgstr "转到不同(&O)"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "不显示移动区块(&N)"
@@ -1306,7 +1311,7 @@ msgstr "忽略换行符差异(Windows/Unix/Mac)(&R)"
 msgid "&Include Subfolders"
 msgstr "包含子目录(&I)"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr ""
@@ -1786,7 +1791,7 @@ msgstr "将删除的文件移至回收站(&S)"
 msgid "&External editor:"
 msgstr "外部编辑器(&E)"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "过滤器路径(&F):"
@@ -2071,7 +2076,7 @@ msgstr "行内对比"
 msgid "View line differences"
 msgstr "显示行内不同"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "字符级别(&C)"
@@ -2131,7 +2136,7 @@ msgstr "左侧文件"
 msgid "&Save changes"
 msgstr "保存修改(&S)"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "放弃修改(&D)"
@@ -2581,7 +2586,7 @@ msgstr "备份文件"
 msgid "Create backup files in:"
 msgstr "进行以下操作时创建备份文件:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "文件夹对比(&F)"
@@ -2656,7 +2661,7 @@ msgstr "否"
 msgid "Plugins"
 msgstr ""
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr ""
@@ -2751,7 +2756,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3172,7 +3177,7 @@ msgstr "正则表达式"
 msgid "Filters were updated. Do you want to refresh all open folder compares?\n\nIf you do not want to refresh all compares now you can select No and refresh compares later."
 msgstr ""
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr ""
@@ -4362,9 +4367,9 @@ msgstr "已替换 %1 个字符串。"
 msgid "Cannot find string \"%s\""
 msgstr "无法查找字符串「%s」"
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

@@ -246,10 +246,10 @@ msgstr "В&ихід"
 msgid "&Edit"
 msgstr "&Редакція"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "&Налаштування..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -276,7 +276,7 @@ msgstr "&Великі піктограми"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "Ря&док стану"
@@ -291,7 +291,7 @@ msgstr "Панель &закладок"
 msgid "&Tools"
 msgstr "&Сервіс"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Фільтри..."
@@ -435,6 +435,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "В&ибрати все\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "&Налаштування..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -646,10 +651,10 @@ msgstr "&Попередній перегляд"
 msgid "&Convert Line Endings to"
 msgstr "Замінити перенесення &рядків на"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "Режим &злиття\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -767,7 +772,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "Від&далити\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Звичайний\tCtrl+*"
@@ -827,7 +832,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "За&блокувати панелі"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "Показу&вати пропуски"
@@ -1227,7 +1232,7 @@ msgstr "Праве меню оболонки"
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "&Скопіювати повний шлях"
@@ -1257,7 +1262,7 @@ msgstr "&Автоматичне попереднє порівняння"
 msgid "G&oto Diff"
 msgstr "Перейти до &відмінності"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "&Без переміщених блоків"
@@ -1307,7 +1312,7 @@ msgstr "Нехтувати різницею в кінцях рядків (Win/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "&Враховуючи підтеки"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr ""
@@ -1787,7 +1792,7 @@ msgstr "Переміщувати вилучені файли до кошика"
 msgid "&External editor:"
 msgstr "Зовнішній редактор:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "&Фільтри:"
@@ -2072,7 +2077,7 @@ msgstr "Підсвічування відмінностей у рядку"
 msgid "View line differences"
 msgstr "Показувати відмінності в рядку"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "За символами"
@@ -2132,7 +2137,7 @@ msgstr "Файл з лівої сторони"
 msgid "&Save changes"
 msgstr "&Зберегти зміни"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Скасувати зміни"
@@ -2586,7 +2591,7 @@ msgstr "Резервні копії"
 msgid "Create backup files in:"
 msgstr "Створити резервні файли для:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "Порівняння &тек"
@@ -2661,7 +2666,7 @@ msgstr "Ні"
 msgid "Plugins"
 msgstr "Доповнення"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "&Ввімкнути доповнення"
@@ -2756,7 +2761,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3216,7 +3221,7 @@ msgstr ""
 "\n"
 "Якщо ви не хочете поновлювати всі порівняння зараз, Ви можете вибрати Ні і поновити їх згодом."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "&Шлях до SS.EXE:"
@@ -4435,9 +4440,9 @@ msgstr "Замінено %1 рядків."
 msgid "Cannot find string \"%s\""
 msgstr "Не вдалося знайти рядок \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

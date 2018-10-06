@@ -245,10 +245,10 @@ msgstr "Saír"
 msgid "&Edit"
 msgstr "&Editar"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "&Opcións..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -275,7 +275,7 @@ msgstr "&Grande"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "&Barra de estado"
@@ -290,7 +290,7 @@ msgstr "&Barra de pestanas"
 msgid "&Tools"
 msgstr "&Ferramentas"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Filtros..."
@@ -434,6 +434,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Seleccion&ar todo\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "&Opcións..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -645,10 +650,10 @@ msgstr "Vista previa da impresión"
 msgid "&Convert Line Endings to"
 msgstr "&Converter quebras de liña a"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "&Modo Combinar\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -766,7 +771,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "&Reducir\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Normal\tCtrl+*"
@@ -826,7 +831,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "B&loquear Paneis"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "&Ver espazos en branco"
@@ -1226,7 +1231,7 @@ msgstr "Menú Shell Dereito"
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "&Copiar o camiño completo"
@@ -1256,7 +1261,7 @@ msgstr "Pre-comparación autom."
 msgid "G&oto Diff"
 msgstr "Ir &para a diferenza"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "&Non mostrar bloques movidos"
@@ -1306,7 +1311,7 @@ msgstr "Igno&rar diferenzas nas quebras de liña (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "&Incluíndo sub-cartafoles"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr ""
@@ -1786,7 +1791,7 @@ msgstr "&Enviar os arquivos eliminados para o lixo"
 msgid "&External editor:"
 msgstr "&Editor externo:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "&Cartafol de filtros:"
@@ -2071,7 +2076,7 @@ msgstr "Colorar as diferenzas de liña"
 msgid "View line differences"
 msgstr "Ver diferenzas de liña"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "&A nivel do caracter"
@@ -2131,7 +2136,7 @@ msgstr "Arquivo da esquerda"
 msgid "&Save changes"
 msgstr "&Gardar trocos"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Desbotar trocos"
@@ -2586,7 +2591,7 @@ msgstr "Copias de seguridade(backups)"
 msgid "Create backup files in:"
 msgstr "Crear copias de seguridade na:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "Comparación de carta&foles"
@@ -2661,7 +2666,7 @@ msgstr "Non"
 msgid "Plugins"
 msgstr "Plugins"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "&Activar plugins"
@@ -2756,7 +2761,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3216,7 +3221,7 @@ msgstr ""
 "\n"
 "Se non queres regargar todas as comparacións agora podes seleccionar Non e actualizalas máis adiante."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "&Ruta ao SS.EXE:"
@@ -4429,9 +4434,9 @@ msgstr "Substituídas %1 cadea(s)."
 msgid "Cannot find string \"%s\""
 msgstr "Non se atopou a cadea \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

@@ -246,10 +246,10 @@ msgstr "Zakoñcz"
 msgid "&Edit"
 msgstr "&Edycja"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "&Opcje..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -276,7 +276,7 @@ msgstr "&Du¿y"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "Pasek s&tanu"
@@ -291,7 +291,7 @@ msgstr "Pasek &kart"
 msgid "&Tools"
 msgstr "&Narzêdzia"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Filtry..."
@@ -435,6 +435,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Zaznacz &wszystkie\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "&Opcje..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -646,10 +651,10 @@ msgstr "&Podgl¹d wydruku"
 msgid "&Convert Line Endings to"
 msgstr "&Konwertuj koñce linii do"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "&Tryb scalania\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -767,7 +772,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "&Zmniejsz\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Rozmiar oryginalny\tCtrl+*"
@@ -827,7 +832,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "&Zablokuj panele"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "&Poka¿ bia³e znaki"
@@ -1227,7 +1232,7 @@ msgstr "Menu pow³oki pliku po prawej"
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "Kopiuj &pe³n¹ œcie¿kê"
@@ -1257,7 +1262,7 @@ msgstr "Automatyczne ró¿nicowanie wstêpne"
 msgid "G&oto Diff"
 msgstr "IdŸ &do ró¿nicy"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "Bez &przeniesionych bloków"
@@ -1307,7 +1312,7 @@ msgstr "Ignoruj ró¿nice koñca wiersza (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "&Uwzglêdnij podfoldery"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "Metoda &porównania:"
@@ -1787,7 +1792,7 @@ msgstr "Wyœlij usuniête pliki do &kosza"
 msgid "&External editor:"
 msgstr "Zewnêtrzny &edytor:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "&Folder filtrów:"
@@ -2072,7 +2077,7 @@ msgstr "Kolorowanie ró¿nic linii"
 msgid "View line differences"
 msgstr "Poka¿ ró¿nice linii"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "Poziom &znaków"
@@ -2132,7 +2137,7 @@ msgstr "Plik z lewej"
 msgid "&Save changes"
 msgstr "&Zapisz zmiany"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Odrzuæ zmiany"
@@ -2586,7 +2591,7 @@ msgstr "Pliki kopii"
 msgid "Create backup files in:"
 msgstr "Twórz kopie plików dla:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "Porównania &folderów"
@@ -2661,7 +2666,7 @@ msgstr "Nie"
 msgid "Plugins"
 msgstr "Wtyczki"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "W³¹cz wtyczki"
@@ -2756,7 +2761,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3216,7 +3221,7 @@ msgstr ""
 "\n"
 "Je¿eli nie chcesz odœwierzaæ okien porównañ teraz, wybierz Nie i odœwie¿ okna póŸniej."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "Œcie¿ka do SS.EXE"
@@ -4437,9 +4442,9 @@ msgstr "Zast¹piono %1 sekwencji znaków."
 msgid "Cannot find string \"%s\""
 msgstr "Nie mo¿na znaleŸæ sekwencji znaków \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

@@ -245,10 +245,10 @@ msgstr "&Konec"
 msgid "&Edit"
 msgstr "Úpr&avy"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "Možnost&i..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -275,7 +275,7 @@ msgstr "&Velký"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "&Stavový øádek"
@@ -290,7 +290,7 @@ msgstr "Panel &záložek"
 msgid "&Tools"
 msgstr "&Nástroje"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Filtry..."
@@ -434,6 +434,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Vybr&at vše\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "Možnost&i..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -645,10 +650,10 @@ msgstr "Ná&hled..."
 msgid "&Convert Line Endings to"
 msgstr "Pøevést konce øá&dkù"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "Režim sl&uèování\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -766,7 +771,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "Z&menšit\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Normální\tCtrl+*"
@@ -826,7 +831,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "&Uzamknout panely"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "Zobrazit ne&tisknutelné znaky"
@@ -1226,7 +1231,7 @@ msgstr "Pravá systémová nabídka"
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "Kopírovat celé &umístìní"
@@ -1256,7 +1261,7 @@ msgstr ""
 msgid "G&oto Diff"
 msgstr "&Pøejít na øádek"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "&Nezobrazovat pøesunuté bloky"
@@ -1306,7 +1311,7 @@ msgstr "Ignorovat rozdíly v &koncích øádkù (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "Vèetnì pod&složek"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "&Zpùsob porovnání:"
@@ -1788,7 +1793,7 @@ msgstr "Odeslat odstranìné soubory do &koše"
 msgid "&External editor:"
 msgstr "&Externí editor:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "Složka vlastních &filtrù:"
@@ -2073,7 +2078,7 @@ msgstr "Obarvit rozdíly v øádku"
 msgid "View line differences"
 msgstr "Zobrazit rozdíly v øá&dku"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "Na úrovni &znakù"
@@ -2133,7 +2138,7 @@ msgstr "Soubor na levé stranì"
 msgid "&Save changes"
 msgstr "Ulož&it zmìny"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Zrušit zmìny"
@@ -2583,7 +2588,7 @@ msgstr "Zálohování souborù"
 msgid "Create backup files in:"
 msgstr "Vytváøet záložní soubory pro:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "s&ložek"
@@ -2658,7 +2663,7 @@ msgstr "Ne"
 msgid "Plugins"
 msgstr "Pluginy"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "&Povolit pluginy"
@@ -2753,7 +2758,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3175,7 +3180,7 @@ msgstr "Regulérní výraz"
 msgid "Filters were updated. Do you want to refresh all open folder compares?\n\nIf you do not want to refresh all compares now you can select No and refresh compares later."
 msgstr "Filtry byly aktualizovány. Chcete obnovit všechna porovnání složek?\n\nPokud nechcete obnovit všechna porovnání teï, zvolte Ne a obnovte porovnání pozdìji."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "&Cesta k programu SS.EXE :"
@@ -4359,9 +4364,9 @@ msgstr "Nahrazeno %1 øetìzcù."
 msgid "Cannot find string \"%s\""
 msgstr "Nelze najít øetìzec \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

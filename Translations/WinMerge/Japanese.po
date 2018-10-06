@@ -246,10 +246,10 @@ msgstr "終了(&X)"
 msgid "&Edit"
 msgstr "編集(&E)"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "設定(&O)..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -276,7 +276,7 @@ msgstr "大(&B)"
 msgid "&Huge"
 msgstr "特大(&H)"
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "ステータスバー(&S)"
@@ -291,7 +291,7 @@ msgstr "タブバー(&B)"
 msgid "&Tools"
 msgstr "ツール(&T)"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "フィルタ(&F)..."
@@ -435,6 +435,11 @@ msgstr "ファイルエンコーディング(&E)..."
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "すべて選択(&A)\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "設定(&O)..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -646,10 +651,10 @@ msgstr "印刷プレビュー(&W)"
 msgid "&Convert Line Endings to"
 msgstr "改行コードの変換(&C)"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "マージモード(&M)\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -767,7 +772,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "ズームアウト(&O)\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "元に戻す(&N)\tCtrl+*"
@@ -827,7 +832,7 @@ msgstr "全行/0～9行切替(&T)\tCtrl+D"
 msgid "&Lock Panes"
 msgstr "ペインをロック(&L)"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "空白を表示(&V)"
@@ -1227,7 +1232,7 @@ msgstr "右側シェルメニュー"
 msgid "Copy"
 msgstr "コピー"
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "フルパスをコピー(&C)"
@@ -1257,7 +1262,7 @@ msgstr "自動"
 msgid "G&oto Diff"
 msgstr "差異へ移動(&O)"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "移動ブロック表示なし(&N)"
@@ -1307,7 +1312,7 @@ msgstr "改行文字の違いを無視する(&R) (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "サブフォルダを含む(&I)"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "比較方法(&C):"
@@ -1795,7 +1800,7 @@ msgstr "削除されたファイルをごみ箱に移動する(&P)"
 msgid "&External editor:"
 msgstr "外部エディタ(&E): (置換される引数 $file, $linenum):"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "フィルタフォルダ(&F):"
@@ -2080,7 +2085,7 @@ msgstr "行内差異の色付け"
 msgid "View line differences"
 msgstr "行内差異を表示する"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "文字単位(&C)"
@@ -2140,7 +2145,7 @@ msgstr "左側ファイル"
 msgid "&Save changes"
 msgstr "変更を保存する(&S)"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "変更を破棄する(&D)"
@@ -2600,7 +2605,7 @@ msgstr "バックアップファイル"
 msgid "Create backup files in:"
 msgstr "作成するバックアップ:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "フォルダ比較(&F)"
@@ -2675,7 +2680,7 @@ msgstr "いいえ"
 msgid "Plugins"
 msgstr "プラグイン"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "プラグインを有効にする(&E)"
@@ -2770,7 +2775,7 @@ msgstr "Frhed 設定"
 msgid "View &Settings..."
 msgstr "表示設定(&S)..."
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr "バイナリモード(&B)..."
@@ -3264,7 +3269,7 @@ msgstr ""
 "もし、いまはすべての比較ウインドウを更新したくない場合、いいえを選択し、後で"
 "比較ウインドウを更新してください。"
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "SS.EXEへのパス(&P):"
@@ -4522,15 +4527,10 @@ msgstr "%1個の文字列を置換しました"
 msgid "Cannot find string \"%s\""
 msgstr "文字列\"%s\"が検索できません"
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid ""
-"You are now entering Merge Mode. If you want to turn off Merge Mode, press "
-"F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
-"マージモードに入ります。マージモードはカーソルキーのみでマージしたり、次や前"
-"の差異に移動できるモードです。マージモードをオフにしたい場合は、F9キーを押し"
-"てください。"
 
 #: Merge.rc:5E0C549
 #, c-format

@@ -245,10 +245,10 @@ msgstr "&Koniec"
 msgid "&Edit"
 msgstr "Úpr&avy"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "&Nastavenia"
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -275,7 +275,7 @@ msgstr "&Ve¾kı"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "&Stavovı riadok"
@@ -290,7 +290,7 @@ msgstr "Panel &záloiek"
 msgid "&Tools"
 msgstr "&Nástroje"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Filtre..."
@@ -434,6 +434,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Vybr&a všetko\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "&Nastavenia"
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -645,10 +650,10 @@ msgstr "Náh¾ad p&red tlaèou"
 msgid "&Convert Line Endings to"
 msgstr "&Konvertova konce riadkov na"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "&Zluèovací reim\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -766,7 +771,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "&Oddiali\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Normálna ve¾kos\tCtrl+*"
@@ -826,7 +831,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "&Zamknú panely"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "&Zobrazi prázdne miesto"
@@ -1226,7 +1231,7 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "&Kopírova plnú cestu"
@@ -1256,7 +1261,7 @@ msgstr "&Auto preprocesor"
 msgid "G&oto Diff"
 msgstr "Ch&oï na rozdiel"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "&Bez presunutıch blokov"
@@ -1306,7 +1311,7 @@ msgstr ""
 msgid "&Include Subfolders"
 msgstr "&Zahrnú podadresáre"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr ""
@@ -1786,7 +1791,7 @@ msgstr "&Posiela zmazané súbory do koša"
 msgid "&External editor:"
 msgstr "&Externı editor:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "Adresár s &filtrami:"
@@ -2071,7 +2076,7 @@ msgstr "Farebné odlíšenie riadkovıch rozdielov"
 msgid "View line differences"
 msgstr "Zobrazova riadkové rozdiely"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "Úroveò &znaku"
@@ -2131,7 +2136,7 @@ msgstr "Súbor na ¾avej strane"
 msgid "&Save changes"
 msgstr "&Uloi zmeny"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Zahodi zmeny"
@@ -2581,7 +2586,7 @@ msgstr "Záloné súbory"
 msgid "Create backup files in:"
 msgstr "Vytvára záloné súbory v:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "Porovnávanie &adresárov"
@@ -2656,7 +2661,7 @@ msgstr "Nie"
 msgid "Plugins"
 msgstr ""
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr ""
@@ -2751,7 +2756,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3187,7 +3192,7 @@ msgstr "Regulárny vıraz"
 msgid "Filters were updated. Do you want to refresh all open folder compares?\n\nIf you do not want to refresh all compares now you can select No and refresh compares later."
 msgstr ""
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr ""
@@ -4392,9 +4397,9 @@ msgstr "Nahradenıch %1 reazcov."
 msgid "Cannot find string \"%s\""
 msgstr "Nemôem nájs reazec \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

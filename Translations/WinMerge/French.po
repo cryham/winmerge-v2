@@ -249,10 +249,10 @@ msgstr "&Quitter"
 msgid "&Edit"
 msgstr "&Edition"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "&Préférences..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -279,7 +279,7 @@ msgstr "&Grande"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "Barre d'&état"
@@ -294,7 +294,7 @@ msgstr "Barre d'&onglets"
 msgid "&Tools"
 msgstr "&Outils"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Filtrer..."
@@ -438,6 +438,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Sélectionner &tout\tCtrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "&Préférences..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -649,10 +654,10 @@ msgstr "&Aperçu avant impression"
 msgid "&Convert Line Endings to"
 msgstr "&Convertir les fins de ligne"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "Mode &Fusion\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -770,7 +775,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "Zoom a&rrière\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Normal\tCtrl+*"
@@ -830,7 +835,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "&Verrouiller les fenêtres"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "Afficher les &espaces"
@@ -1230,7 +1235,7 @@ msgstr "Menu explorateur droit"
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "Copier le c&hemin complet"
@@ -1260,7 +1265,7 @@ msgstr "Au&tomatique"
 msgid "G&oto Diff"
 msgstr "Atteindre la différence courante"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "&Ne pas afficher les blocs déplacés"
@@ -1310,7 +1315,7 @@ msgstr "Ignorer les différences de &fin de ligne (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "&Inclure les sous-répertoires"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "&Méthode de comparaison:"
@@ -1790,7 +1795,7 @@ msgstr "&Envoyer les fichiers supprimés à la corbeille"
 msgid "&External editor:"
 msgstr "E&diteur externe:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "&Répertoire de filtre:"
@@ -2075,7 +2080,7 @@ msgstr "Colorer les différences de ligne"
 msgid "View line differences"
 msgstr "A&fficher les différences"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "Précision au &caractère"
@@ -2135,7 +2140,7 @@ msgstr "Fichier du côté gauche"
 msgid "&Save changes"
 msgstr "&Enregister les changements"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Ignorer les changements"
@@ -2589,7 +2594,7 @@ msgstr "Fichiers d'archive"
 msgid "Create backup files in:"
 msgstr "Créer les fichiers d'archive sous:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "comparaison de Répert&oires"
@@ -2664,7 +2669,7 @@ msgstr "Non"
 msgid "Plugins"
 msgstr "Plugiciels"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "&Activer les plugiciels"
@@ -2759,7 +2764,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3218,7 +3223,7 @@ msgstr ""
 "\n"
 "Si vous ne voulez pas actualiser la comparaison. Sélectionnez Non et l'actualisation se fera plus tard."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "&Chemin vers SS.EXE:"
@@ -4439,9 +4444,9 @@ msgstr "%1 remplacement(s) effectué(s)."
 msgid "Cannot find string \"%s\""
 msgstr "Texte non trouvé \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

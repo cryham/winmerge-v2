@@ -248,10 +248,10 @@ msgstr "Ir&ten"
 msgid "&Edit"
 msgstr "&Editatu"
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
-msgstr "&Aukerak..."
+msgid "&Options...\tF12"
+msgstr ""
 
 #: Merge.rc:43017E48
 #, c-format
@@ -278,7 +278,7 @@ msgstr "&Handia"
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr "&Egoera Barra"
@@ -293,7 +293,7 @@ msgstr "&Fitxa Barra"
 msgid "&Tools"
 msgstr "&Tresnak"
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr "&Iragazkiak..."
@@ -437,6 +437,11 @@ msgstr ""
 #, c-format
 msgid "Select &All\tCtrl+A"
 msgstr "Hautatu &Denak\t Ctrl+A"
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
+msgstr "&Aukerak..."
 
 #: Merge.rc:58EEEB7E
 #, c-format
@@ -648,10 +653,10 @@ msgstr "Irarkitu Aurreikus&pena"
 msgid "&Convert Line Endings to"
 msgstr "Bihurtu &Lerro Amaierak hona"
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
-msgstr "Batu &Modua\tF9"
+msgid "&Merge Mode\tF11"
+msgstr ""
 
 #: Merge.rc:32BFDBAA
 #, c-format
@@ -769,7 +774,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr "Zooma &Gutxitu\tCtrl+-"
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr "&Normala\tCtrl+*"
@@ -829,7 +834,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr "Bl&okeatu Panelak"
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr "Ikusi Zurigu&nea"
@@ -1229,7 +1234,7 @@ msgstr "Eskuineko Shell menua"
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr "Kopiatu Helburu O&soa"
@@ -1259,7 +1264,7 @@ msgstr "Berez aurrezberd"
 msgid "G&oto Diff"
 msgstr "Jo&an Ezberd"
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr "Mugitu &Gabeko Bloke Guztiak"
@@ -1309,7 +1314,7 @@ msgstr "Ezikusi g&urdi itzulera ezberdintasunak (Windows/Unix/Mac)"
 msgid "&Include Subfolders"
 msgstr "&Az&piagiritegiak Barne"
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr "Alderaketa &metodoa:"
@@ -1789,7 +1794,7 @@ msgstr "&Bidali ezabatutako agiriak Birziklatze Ontzira"
 msgid "&External editor:"
 msgstr "&Kanpoko editatzailea:"
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr "&Iragazki agiritegia:"
@@ -2074,7 +2079,7 @@ msgstr "Lerro Ezberdintasuna Margotzen"
 msgid "View line differences"
 msgstr "&Ikusi lerro ezberdintasunak"
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr "Hiz&ki maila"
@@ -2134,7 +2139,7 @@ msgstr "Ezkerralde agiria"
 msgid "&Save changes"
 msgstr "Gor&de aldaketak"
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr "&Baztertu aldaketak"
@@ -2588,7 +2593,7 @@ msgstr "Babeskopia Agiriak"
 msgid "Create backup files in:"
 msgstr "Sortu babeskopia agiriak hemen:"
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr "&Agiritegi alderaketa"
@@ -2663,7 +2668,7 @@ msgstr "Ez"
 msgid "Plugins"
 msgstr "Pluginak"
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr "Gaitu &pluginak"
@@ -2758,7 +2763,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3218,7 +3223,7 @@ msgstr ""
 "\n"
 "Ez badituzu nahi alderaketa guztiak orain berritzea hautatu Ez eta berritu alderaketak gero."
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr "&Helburutu SS.EXE-ra:"
@@ -4439,9 +4444,9 @@ msgstr "Ordeztuta %1 kate."
 msgid "Cannot find string \"%s\""
 msgstr "Ezin da kate hau aurkitu: \"%s\""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549

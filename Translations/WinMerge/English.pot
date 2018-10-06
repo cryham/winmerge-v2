@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinMerge\n"
 "Report-Msgid-Bugs-To: http://bugs.winmerge.org/\n"
-"POT-Creation-Date: 2017-03-26 14:36+0000\n"
+"POT-Creation-Date: 2018-10-06 08:26+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: English <winmerge-translate@lists.sourceforge.net>\n"
@@ -241,9 +241,9 @@ msgstr ""
 msgid "&Edit"
 msgstr ""
 
-#: Merge.rc:27AC6D7E
+#: Merge.rc:1DC30E62
 #, c-format
-msgid "&Options..."
+msgid "&Options...\tF12"
 msgstr ""
 
 #: Merge.rc:43017E48
@@ -271,7 +271,7 @@ msgstr ""
 msgid "&Huge"
 msgstr ""
 
-#: Merge.rc:27AC6D7F
+#: Merge.rc:27AC6D7E
 #, c-format
 msgid "&Status Bar"
 msgstr ""
@@ -286,7 +286,7 @@ msgstr ""
 msgid "&Tools"
 msgstr ""
 
-#: Merge.rc:27AC6D80
+#: Merge.rc:27AC6D7F
 #, c-format
 msgid "&Filters..."
 msgstr ""
@@ -429,6 +429,11 @@ msgstr ""
 #: Merge.rc:E44718
 #, c-format
 msgid "Select &All\tCtrl+A"
+msgstr ""
+
+#: Merge.rc:27AC6D80
+#, c-format
+msgid "&Options..."
 msgstr ""
 
 #: Merge.rc:58EEEB7E
@@ -641,9 +646,9 @@ msgstr ""
 msgid "&Convert Line Endings to"
 msgstr ""
 
-#: Merge.rc:78B3B623
+#: Merge.rc:1DC30E63
 #, c-format
-msgid "&Merge Mode\tF9"
+msgid "&Merge Mode\tF11"
 msgstr ""
 
 #: Merge.rc:32BFDBAA
@@ -762,7 +767,7 @@ msgid "Zoom &Out\tCtrl+-"
 msgstr ""
 
 #. Zoom to normal
-#: Merge.rc:78B3B624
+#: Merge.rc:78B3B623
 #, c-format
 msgid "&Normal\tCtrl+*"
 msgstr ""
@@ -822,7 +827,7 @@ msgstr ""
 msgid "&Lock Panes"
 msgstr ""
 
-#: Merge.rc:1DC30E62
+#: Merge.rc:1DC30E64
 #, c-format
 msgid "&View Whitespace"
 msgstr ""
@@ -1222,7 +1227,7 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
-#: Merge.rc:78B3B625
+#: Merge.rc:78B3B624
 #, c-format
 msgid "&Copy Full Path"
 msgstr ""
@@ -1252,7 +1257,7 @@ msgstr ""
 msgid "G&oto Diff"
 msgstr ""
 
-#: Merge.rc:1DC30E63
+#: Merge.rc:1DC30E65
 #, c-format
 msgid "&No Moved Blocks"
 msgstr ""
@@ -1302,7 +1307,7 @@ msgstr ""
 msgid "&Include Subfolders"
 msgstr ""
 
-#: Merge.rc:1DC30E64
+#: Merge.rc:1DC30E66
 #, c-format
 msgid "&Compare method:"
 msgstr ""
@@ -1782,7 +1787,7 @@ msgstr ""
 msgid "&External editor:"
 msgstr ""
 
-#: Merge.rc:78B3B626
+#: Merge.rc:78B3B625
 #, c-format
 msgid "&Filter folder:"
 msgstr ""
@@ -2067,7 +2072,7 @@ msgstr ""
 msgid "View line differences"
 msgstr ""
 
-#: Merge.rc:1DC30E65
+#: Merge.rc:1DC30E67
 #, c-format
 msgid "&Character level"
 msgstr ""
@@ -2127,7 +2132,7 @@ msgstr ""
 msgid "&Save changes"
 msgstr ""
 
-#: Merge.rc:1DC30E66
+#: Merge.rc:1DC30E68
 #, c-format
 msgid "&Discard changes"
 msgstr ""
@@ -2577,7 +2582,7 @@ msgstr ""
 msgid "Create backup files in:"
 msgstr ""
 
-#: Merge.rc:78B3B627
+#: Merge.rc:78B3B626
 #, c-format
 msgid "&Folder compare"
 msgstr ""
@@ -2652,7 +2657,7 @@ msgstr ""
 msgid "Plugins"
 msgstr ""
 
-#: Merge.rc:78B3B628
+#: Merge.rc:78B3B627
 #, c-format
 msgid "&Enable plugins"
 msgstr ""
@@ -2747,7 +2752,7 @@ msgstr ""
 msgid "View &Settings..."
 msgstr ""
 
-#: Merge.rc:78B3B629
+#: Merge.rc:78B3B628
 #, c-format
 msgid "&Binary Mode..."
 msgstr ""
@@ -3127,7 +3132,7 @@ msgstr ""
 msgid "Filters were updated. Do you want to refresh all open folder compares?\n\nIf you do not want to refresh all compares now you can select No and refresh compares later."
 msgstr ""
 
-#: Merge.rc:1DC30E67
+#: Merge.rc:1DC30E69
 #, c-format
 msgid "&Path to SS.EXE:"
 msgstr ""
@@ -4198,9 +4203,9 @@ msgstr ""
 msgid "Cannot find string \"%s\""
 msgstr ""
 
-#: Merge.rc:34855CF1
+#: Merge.rc:5C264195
 #, c-format
-msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F9 key"
+msgid "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 msgstr ""
 
 #: Merge.rc:5E0C549
