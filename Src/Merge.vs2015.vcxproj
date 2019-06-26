@@ -314,6 +314,7 @@
     <ClCompile Include="..\Externals\crystaledit\editlib\batch.cpp" />
     <ClCompile Include="..\Externals\crystaledit\editlib\ccrystaleditview.cpp" />
     <ClCompile Include="..\Externals\crystaledit\editlib\ccrystaltextbuffer.cpp" />
+    <ClCompile Include="..\Externals\crystaledit\editlib\ccrystaltextdraw.cpp" />
     <ClCompile Include="..\Externals\crystaledit\editlib\ccrystaltextview.cpp" />
     <ClCompile Include="..\Externals\crystaledit\editlib\ccrystaltextview2.cpp" />
     <ClCompile Include="..\Externals\crystaledit\editlib\ceditreplacedlg.cpp" />

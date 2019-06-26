@@ -754,6 +754,9 @@
     <ClCompile Include="diffutils\src\mystat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Externals\crystaledit\editlib\ccrystaltextdraw.cpp">
+      <Filter>EditLib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="charsets.h">

@@ -83,7 +83,7 @@ BEGIN
         POPUP "Op&en"
         BEGIN
             MENUITEM "with &Registered Application", ID_FILE_OPEN_REGISTERED
-            MENUITEM "with &External Editor\tCtrl+Alt+E",       ID_FILE_OPEN_WITHEDITOR
+            MENUITEM "with &External Editor\tCtrl+Alt+E", ID_FILE_OPEN_WITHEDITOR
             MENUITEM "&with...",                    ID_FILE_OPEN_WITH
         END
     END
@@ -170,7 +170,7 @@ BEGIN
     END
     POPUP "&Edit"
     BEGIN
-        MENUITEM "&Options...\tF12",                 ID_OPTIONS
+        MENUITEM "&Options...\tF12",            ID_OPTIONS
     END
     POPUP "&View"
     BEGIN
@@ -400,7 +400,7 @@ BEGIN
             MENUITEM "&Mac (CR)",                   ID_EOL_TO_MAC
         END
         MENUITEM SEPARATOR
-        MENUITEM "&Merge Mode\tF11",             ID_FILE_MERGINGMODE
+        MENUITEM "&Merge Mode\tF11",            ID_FILE_MERGINGMODE
         MENUITEM SEPARATOR
         MENUITEM "Re&load\tCtrl+F5",            ID_RESCAN
         MENUITEM "&File Encoding...",           ID_FILE_ENCODING
@@ -455,7 +455,7 @@ BEGIN
         BEGIN
             MENUITEM "Zoom &In\tCtrl++",            ID_VIEW_ZOOMIN
             MENUITEM "Zoom &Out\tCtrl+-",           ID_VIEW_ZOOMOUT
-            MENUITEM "&Normal\tCtrl+*",             ID_VIEW_ZOOMNORMAL //#. Zoom to normal
+            MENUITEM "&Normal\tCtrl+*",             ID_VIEW_ZOOMNORMAL
         END
         POPUP "Syntax Highlight"
         BEGIN
@@ -464,13 +464,13 @@ BEGIN
         MENUITEM SEPARATOR
         POPUP "&Diff Context"
         BEGIN
-            MENUITEM "&All Lines",                        ID_VIEW_DIFFCONTEXT_ALL
-            MENUITEM "&0 Lines",                          ID_VIEW_DIFFCONTEXT_0
-            MENUITEM "&1 Line",                           ID_VIEW_DIFFCONTEXT_1
-            MENUITEM "&3 Lines",                          ID_VIEW_DIFFCONTEXT_3
-            MENUITEM "&5 Lines",                          ID_VIEW_DIFFCONTEXT_5
-            MENUITEM "&7 Lines",                          ID_VIEW_DIFFCONTEXT_7
-            MENUITEM "&9 Lines",                          ID_VIEW_DIFFCONTEXT_9
+            MENUITEM "&All Lines",                  ID_VIEW_DIFFCONTEXT_ALL
+            MENUITEM "&0 Lines",                    ID_VIEW_DIFFCONTEXT_0
+            MENUITEM "&1 Line",                     ID_VIEW_DIFFCONTEXT_1
+            MENUITEM "&3 Lines",                    ID_VIEW_DIFFCONTEXT_3
+            MENUITEM "&5 Lines",                    ID_VIEW_DIFFCONTEXT_5
+            MENUITEM "&7 Lines",                    ID_VIEW_DIFFCONTEXT_7
+            MENUITEM "&9 Lines",                    ID_VIEW_DIFFCONTEXT_9
             MENUITEM "&Toggle All and 0-9 Lines\tCtrl+D", ID_VIEW_DIFFCONTEXT_TOGGLE
         END
         MENUITEM SEPARATOR
@@ -791,7 +791,7 @@ BEGIN
     "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
     "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
     "D",            ID_VIEW_DIFFCONTEXT_TOGGLE, VIRTKEY, CONTROL, NOINVERT
-	"E",            ID_FILE_OPEN_WITHEDITOR, VIRTKEY, ALT, CONTROL, NOINVERT
+    "E",            ID_FILE_OPEN_WITHEDITOR, VIRTKEY, CONTROL, ALT, NOINVERT
     "C",            ID_EDIT_COPY_LINENUMBERS, VIRTKEY, SHIFT, CONTROL, NOINVERT
     "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
     "G",            ID_EDIT_WMGOTO,         VIRTKEY, CONTROL, NOINVERT
@@ -831,8 +831,8 @@ BEGIN
     VK_F5,          ID_RESCAN,              VIRTKEY, CONTROL, NOINVERT
     VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
     VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
-    VK_F11,          ID_FILE_MERGINGMODE,    VIRTKEY, NOINVERT
-    VK_F12,          ID_OPTIONS,             VIRTKEY, NOINVERT
+    VK_F11,         ID_FILE_MERGINGMODE,    VIRTKEY, NOINVERT
+    VK_F12,         ID_OPTIONS,             VIRTKEY, NOINVERT
     VK_HOME,        ID_FIRSTDIFF,           VIRTKEY, ALT, NOINVERT
     VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
     VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
@@ -1683,16 +1683,15 @@ BEGIN
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,36,222,10
     CONTROL         "&Include unique subfolders contents",IDC_COMPARE_WALKSUBDIRS,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,48,202,10
-    CONTROL         "&Include Subfolders",IDC_RECURS_CHECK,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,60,202,10
+    CONTROL         "&Include Subfolders",IDC_RECURS_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,60,202,10
     CONTROL         "&Automatically expand all subfolders",IDC_EXPAND_SUBDIRS,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,72,202,10
     CONTROL         "Ignore &Reparse Points",IDC_IGNORE_REPARSEPOINTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,84,202,10
     LTEXT           "&Quick compare limit (MB):",IDC_STATIC,7,96,200,10
-    EDITTEXT        IDC_COMPARE_QUICKC_LIMIT,7,108,30,14,ES_AUTOHSCROLL,
+    EDITTEXT        IDC_COMPARE_QUICKC_LIMIT,7,108,30,14,ES_AUTOHSCROLL
     PUSHBUTTON      "Defaults",IDC_COMPAREFOLDER_DEFAULTS,7,198,70,14
     LTEXT           "&Number of compare threads (a negative value implies addition of the number of available CPU cores):",IDC_STATIC,7,124,200,30
-    EDITTEXT        IDC_COMPARE_THREAD_COUNT,7,156,30,14,ES_AUTOHSCROLL,
+    EDITTEXT        IDC_COMPARE_THREAD_COUNT,7,156,30,14,ES_AUTOHSCROLL
 END
 
 IDD_PROPPAGE_COMPARE_BINARY DIALOGEX 0, 0, 235, 205
@@ -1733,6 +1732,68 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_OPEN, DIALOG
+    BEGIN
+    END
+
+    IDD_CLEARCASE, DIALOG
+    BEGIN
+    END
+
+    IDD_PROPPAGE_COLORS_WINMERGE, DIALOG
+    BEGIN
+    END
+
+    IDD_GENERATE_PATCH, DIALOG
+    BEGIN
+    END
+
+    IDD_EDITOR_HEADERBAR, DIALOG
+    BEGIN
+    END
+
+    IDD_MESSAGE_BOX, DIALOG
+    BEGIN
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+    END
+
+    IDD_LOAD_SAVE_CODEPAGE, DIALOG
+    BEGIN
+    END
+
+    IDD_PLUGINS_LIST, DIALOG
+    BEGIN
+    END
+
+    IDD_ENCODINGERROR, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PROPPAGE_COLORS_WINMERGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 
@@ -1741,7 +1802,6 @@ BEGIN
     AFX_IDS_APP_TITLE       "WinMerge"
 END
 
-// Generic status bar strings
 STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
@@ -1752,7 +1812,6 @@ BEGIN
     ID_INDICATOR_REC        "REC"
 END
 
-// Generic File menu commands
 STRINGTABLE
 BEGIN
     ID_FILE_NEW             "\nNew Documents (Ctrl+N)"
@@ -1760,26 +1819,27 @@ BEGIN
     ID_FILE_SAVE            "\nSave (Ctrl+S)"
 END
 
-// WinMerge Project Files
 STRINGTABLE
 BEGIN
     IDS_UNK_ERROR_READING_PROJECT 
                             "Unknown error attempting to open project file"
     IDS_UNK_ERROR_SAVING_PROJECT 
                             "Unknown error attempting to save project file"
+END
+
+STRINGTABLE
+BEGIN
     IDS_PROJFILEDLG_CAPTION "Project File"
     IDS_PROJFILE_LOAD_SUCCESS "Project file successfully loaded."
     IDS_PROJFILE_SAVE_SUCCESS "Project file successfully saved."
 END
 
-// Generic Edit commands
 STRINGTABLE
 BEGIN
     ID_EDIT_UNDO            "\nUndo (Ctrl+Z)"
     ID_EDIT_REDO            "\nRedo (Ctrl+Y)"
 END
 
-// WINMERGE INFORMATION
 STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "WinMerge"
@@ -1787,14 +1847,12 @@ BEGIN
     IDR_DIRDOCTYPE          "\nFolderCompare\n\n\n\nWinMerge.FolderCompare\nWinMerge Folder Compare"
 END
 
-// SPLASH SCREEN TEXTS
 STRINGTABLE
 BEGIN
     IDS_SPLASH_DEVELOPERS   "Developers:\nDean Grimm, Christian List, Kimmo Varis, Jochen Tucht, Tim Gerundt, Takashi Sawanaki, Gal Hammer, Alexander Skinner"
     IDS_SPLASH_GPLTEXT      "WinMerge comes with ABSOLUTELY NO WARRANTY. This is free software and you are welcome to redistribute it under certain circumstances; see the GNU General Public License in the Help menu for details."
 END
 
-// "DO NOT SHOW AGAIN" MESSAGEBOXES
 STRINGTABLE
 BEGIN
     IDS_MESSAGEBOX_OK       "&Ok"
@@ -1806,7 +1864,6 @@ BEGIN
     IDS_MESSAGEBOX_YES      "&Yes"
 END
 
-// "DO NOT SHOW AGAIN" MESSAGEBOXES (2)
 STRINGTABLE
 BEGIN
     IDS_MESSAGEBOX_YES_TO_ALL "Yes to &all"
@@ -1820,7 +1877,6 @@ BEGIN
     IDS_MESSAGEBOX_DONT_ASK_AGAIN "Don't ask this &question again."
 END
 
-// Options-dialog page captions
 STRINGTABLE
 BEGIN
     IDS_OPTIONSPG_GENERAL   "General"
@@ -1838,11 +1894,13 @@ BEGIN
     IDS_OPTIONSPG_MERGECOLORS "Differences"
     IDS_OPTIONSPG_GENCOMPARE "General"
     IDS_OPTIONSPG_FOLDERCOMPARE "Folder"
+END
+
+STRINGTABLE
+BEGIN
     IDS_OPTIONSPG_IMAGECOMPARE "Image"
     IDS_OPTIONSPG_BINARYCOMPARE "Binary"
 END
-
-// WINMERGE CUSTOM STRINGS
 
 STRINGTABLE
 BEGIN
@@ -1853,7 +1911,6 @@ BEGIN
     IDS_TO_RIGHT            "To right:"
 END
 
-// WINMERGE INFORMATION
 STRINGTABLE
 BEGIN
     IDS_VERSION_FMT         "Version %1"
@@ -1861,7 +1918,6 @@ BEGIN
     IDS_WINX64              "X64"
 END
 
-// VARIOUS OPTIONS
 STRINGTABLE
 BEGIN
     IDS_OPTIONS_TITLE       "Options (%1)"
@@ -1870,7 +1926,6 @@ BEGIN
                             "Value in Tab size -field is not in range WinMerge accepts.\n\nPlease use values 1 - %1."
 END
 
-// BROWSE FILE
 STRINGTABLE
 BEGIN
     IDS_OPEN_TITLE          "Open"
@@ -1881,7 +1936,6 @@ BEGIN
     IDS_INIFILES            "Options files (*.ini)|*.ini|All Files (*.*)|*.*||"
 END
 
-// REPORT FILES
 STRINGTABLE
 BEGIN
     IDS_TEXT_REPORT_FILES   "Text Files (*.csv;*.asc;*.rpt;*.txt)|*.csv;*.asc;*.rpt;*.txt|All Files (*.*)|*.*||"
@@ -1889,9 +1943,12 @@ BEGIN
     IDS_XML_REPORT_FILES    "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 END
 
-// COMPARE OPTIONS
 STRINGTABLE
 BEGIN
+    IDS_UNPACK_AUTO         "The adapted unpacker is applied to both files (one file only needs the extension)"
+    IDS_NO_PREDIFFER        "No prediffer (normal)"
+    IDS_SUGGESTED_PLUGINS   "Suggested plugins"
+    IDS_NOT_SUGGESTED_PLUGINS "Other plugins"
     IDS_COMPMETHOD_FULL_CONTENTS "Full Contents"
     IDS_COMPMETHOD_QUICK_CONTENTS "Quick Contents"
     IDS_COMPMETHOD_BINARY_CONTENTS "Binary Contents"
@@ -1900,7 +1957,6 @@ BEGIN
     IDS_COMPMETHOD_SIZE     "Size"
 END
 
-// FILTER OPTIONS
 STRINGTABLE
 BEGIN
     IDS_FILTERFILE_NAMETITLE "Name"
@@ -1925,26 +1981,22 @@ BEGIN
                             "Filter file already exists. Overwrite existing filter?"
 END
 
-// LINEFILTER STRINGS
 STRINGTABLE
 BEGIN
     IDS_FILTERLINE_REGEXP   "Regular expression"
 END
 
-// GENERAL FILTER STRINGS
 STRINGTABLE
 BEGIN
     IDS_FILTERCHANGED       "Filters were updated. Do you want to refresh all open folder compares?\n\nIf you do not want to refresh all compares now you can select No and refresh compares later."
 END
 
-// VERSION CONTROL OPTIONS
 STRINGTABLE
 BEGIN
     IDS_CC_CMD              "&Path to cleartool.exe:"
     IDS_VSS_CMD             "&Path to SS.EXE:"
 END
 
-// WINDOWS TITLES
 STRINGTABLE
 BEGIN
     IDS_DIRECTORY_WINDOW_TITLE "Folder Comparison Results"
@@ -1956,28 +2008,20 @@ BEGIN
     IDS_CONFLICT_MINE_FILE  "Mine File"
 END
 
-// STATUS BAR : OTHER PANES (MOSTLY FOR EDITOR)
 STRINGTABLE
 BEGIN
-    IDS_LINE_STATUS_INFO_EOL 
-                            "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
+    IDS_LINE_STATUS_INFO_EOL "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
     IDS_EMPTY_LINE_STATUS_INFO "Line: %s"
     IDS_LINE_STATUS_INFO    "Ln: %s  Col: %d/%d  Ch: %d/%d"
     IDS_MERGEMODE_MERGING   "Merge"
     IDS_DIFF_NUMBER_STATUS_FMT "Difference %1 of %2"
     IDS_NO_DIFF_SEL_FMT     "%1 Differences Found"
     IDS_1_DIFF_FOUND        "1 Difference Found"
-    IDS_STATUSBAR_READONLY  "RO" //#. Abbreviation from "Read Only"
-END
-
-// MORE STATUS PANES
-STRINGTABLE
-BEGIN
+    IDS_STATUSBAR_READONLY  "RO"
     IDS_DIRVIEW_STATUS_FMT_FOCUS "Item %1 of %2"
     IDS_DIRVIEW_STATUS_FMT_NOFOCUS "Items: %1"
 END
 
-// OPEN DIALOG
 STRINGTABLE
 BEGIN
     IDS_ERROR_INCOMPARABLE  "Select two existing folders or files to compare"
@@ -1995,7 +2039,6 @@ BEGIN
     IDS_OPEN_MISMATCH       "Cannot compare file and folder!"
 END
 
-// LOADING FILE
 STRINGTABLE
 BEGIN
     IDS_ERROR_FILE_NOT_FOUND "File not found: %1"
@@ -2005,7 +2048,6 @@ BEGIN
     IDS_NOT_CONFLICT_FILE   "The file\n%1\nis not a conflict file."
 END
 
-// SAVING FILE
 STRINGTABLE
 BEGIN
     IDS_SAVE_AS_TITLE       "Save As"
@@ -2025,16 +2067,18 @@ BEGIN
     IDS_SAVE_LEFT_AS        "Save Left File As"
     IDS_SAVE_MIDDLE_AS      "Save Middle File As"
     IDS_SAVE_RIGHT_AS       "Save Right File As"
+END
+
+STRINGTABLE
+BEGIN
     IDS_FILE_DISAPPEARED    "The file\n%1\nhas disappeared. Please save a copy of the file to continue."
 END
 
-// Editing/Merging file
 STRINGTABLE
 BEGIN
     IDS_VIEWS_OUTOFSYNC     "Cannot merge differences when documents are not in synch.\n\nRefresh documents before continuing."
 END
 
-// VSS
 STRINGTABLE
 BEGIN
     IDS_NOPROJECT           "You must specify a SourceSafe project path in order to continue (ie:  $/MyProject)"
@@ -2049,18 +2093,20 @@ BEGIN
     IDS_VSS_UNCOERROR       "Versioning System returned an error while attempting to undo checkout the file.\n Please, check config spec of used view. "
 END
 
-// VSS system
 STRINGTABLE
 BEGIN
     IDS_VCS_NONE            "None"
     IDS_VCS_VSS4            "Visual SourceSafe (less than 5.0)"
     IDS_VCS_VSS5            "Visual SourceSafe (5.0 and above)"
     IDS_VCS_CLEARCASE       "Rational ClearCase"
+END
+
+STRINGTABLE
+BEGIN
     IDS_BREAK_ON_WHITESPACE "Break at whitespace"
     IDS_BREAK_ON_PUNCTUATION "Break at whitespace or punctuation"
 END
 
-// DIRECTORY DIFFING : FILE COPY/DELETE (WITHOUT/WITH NUMBER MARK)
 STRINGTABLE
 BEGIN
     IDS_COPY_RIGHT_TO_LEFT  "Right to Left (%1)"
@@ -2075,6 +2121,10 @@ BEGIN
     IDS_COPY_MIDDLE_TO_RIGHT2 "Middle to Right (%1 of %2)"
     IDS_COPY_LEFT_TO_RIGHT2 "Left to Right (%1 of %2)"
     IDS_COPY_LEFT_TO_MIDDLE2 "Left to Middle (%1 of %2)"
+END
+
+STRINGTABLE
+BEGIN
     IDS_COPY_LEFT_TO        "Left to... (%1)"
     IDS_COPY_MIDDLE_TO      "Middle to... (%1)"
     IDS_COPY_RIGHT_TO       "Right to... (%1)"
@@ -2089,7 +2139,6 @@ BEGIN
     IDS_COPY_DIFFERENCES_TO2 "Differences to... (%1 of %2)"
 END
 
-// DIRECTORY DIFFING : FILE COPY/DELETE (WITHOUT/WITH NUMBER MARK)  (2)
 STRINGTABLE
 BEGIN
     IDS_DEL_LEFT_FMT        "Left (%1)"
@@ -2101,6 +2150,10 @@ BEGIN
     IDS_DEL_MIDDLE_FMT2     "Middle (%1 of %2)"
     IDS_DEL_RIGHT_FMT2      "Right (%1 of %2)"
     IDS_DEL_BOTH_FMT2       "Both (%1 of %2)"
+END
+
+STRINGTABLE
+BEGIN
     IDS_DEL_ALL_FMT2        "All (%1 of %2)"
     IDS_MOVE_LEFT_TO        "Left to... (%1)"
     IDS_MOVE_MIDDLE_TO      "Middle to... (%1)"
@@ -2113,15 +2166,14 @@ BEGIN
     IDS_SELECT_DEST_RIGHT   "Right side - select destination folder:"
     IDS_FILES_AFFECTED_FMT  "(%1 Files Affected)"
     IDS_FILES_AFFECTED_FMT2 "(%1 of %2 Files Affected)"
-END
-
-// DIRECTORY DIFFING : FILE COPY/DELETE CONFIRMATION
-STRINGTABLE
-BEGIN
     IDS_CONFIRM_DELETE_SINGLE "Are you sure you want to delete\n\n%1 ?"
     IDS_CONFIRM_SINGLE_COPY "Are you sure you want to copy:"
     IDS_CONFIRM_MULTIPLE_COPY "Are you sure you want to copy %d items:"
     IDS_DIRCMP_NOTSYNC      "Operation aborted!\n\nFolder contents at disks has changed, path\n%1\nwas not found.\n\nPlease refresh the compare."
+END
+
+STRINGTABLE
+BEGIN
     IDS_CONFIRM_SINGLE_MOVE "Are you sure you want to move:"
     IDS_CONFIRM_MULTIPLE_MOVE "Are you sure you want to move %d items:"
     IDS_CONFIRM_COPY_CAPTION "Confirm Copy"
@@ -2130,19 +2182,16 @@ BEGIN
                             "You are about to close the window that is comparing folders. Are you sure you want to close the window?"
 END
 
-// DIRECTORY DIFFING : OPEN FILE
 STRINGTABLE
 BEGIN
     IDS_ERROR_EXECUTE_FILE  "Failed to execute external editor: %1"
 END
 
-// DIRECTORY DIFFING : 7ZIP
 STRINGTABLE
 BEGIN
     IDS_UNKNOWN_ARCHIVE_FORMAT "Unknown archive format"
 END
 
-// DIRECTORY DIFFING : COLUMN TITLES #1
 STRINGTABLE
 BEGIN
     IDS_COLHDR_FILENAME     "Filename"
@@ -2154,13 +2203,16 @@ BEGIN
     IDS_COLHDR_EXTENSION    "Extension"
     IDS_COLHDR_LSIZE        "Left Size"
     IDS_COLHDR_RSIZE        "Right Size"
+END
+
+STRINGTABLE
+BEGIN
     IDS_COLHDR_MSIZE        "Middle Size"
     IDS_COLHDR_RSIZE_SHORT  "Right Size (Short)"
     IDS_COLHDR_LSIZE_SHORT  "Left Size (Short)"
     IDS_COLHDR_MSIZE_SHORT  "Middle Size (Short)"
 END
 
-// DIRECTORY DIFFING : COLUMN TITLES #2
 STRINGTABLE
 BEGIN
     IDS_COLHDR_LTIMEC       "Left Creation Time"
@@ -2174,12 +2226,15 @@ BEGIN
     IDS_COLHDR_LATTRIBUTES  "Left Attributes"
     IDS_COLHDR_RATTRIBUTES  "Right Attributes"
     IDS_COLHDR_MATTRIBUTES  "Middle Attributes"
+END
+
+STRINGTABLE
+BEGIN
     IDS_COLHDR_LEOL_TYPE    "Left EOL"
     IDS_COLHDR_MEOL_TYPE    "Middle EOL"
     IDS_COLHDR_REOL_TYPE    "Right EOL"
 END
 
-// DIRECTORY DIFFING : COLUMN TITLES #3
 STRINGTABLE
 BEGIN
     IDS_COLHDR_LENCODING    "Left Encoding"
@@ -2190,7 +2245,6 @@ BEGIN
     IDS_COLHDR_BINARY       "Binary"
 END
 
-// DIRECTORY DIFFING : FILE COMPARISON RESULT, FULL & SHORTENED FORMS
 STRINGTABLE
 BEGIN
     IDS_CANT_COMPARE_FILES  "Unable to compare files"
@@ -2202,6 +2256,10 @@ BEGIN
     IDS_RIGHT_ONLY_IN_FMT   "Right only: %1"
     IDS_DOES_NOT_EXIST_IN_FMT "Does not exist in %1"
     IDS_BIN_FILES_SAME      "Binary files are identical"
+END
+
+STRINGTABLE
+BEGIN
     IDS_IDENTICAL           "Identical"
     IDS_BIN_FILES_DIFF      "Binary files are different"
     IDS_FILES_ARE_DIFFERENT "Files are different"
@@ -2222,7 +2280,6 @@ BEGIN
     IDS_TEXT_FILES_DIFF     "Text files are different"
 END
 
-// DIRECTORY DIFFING : SUMMARY BAR
 STRINGTABLE
 BEGIN
     IDS_ELAPSED_TIME        "Elapsed time: %ld ms"
@@ -2230,12 +2287,15 @@ BEGIN
     IDS_STATUS_SELITEMS     "%1 items selected"
 END
 
-// DIRECTORY DIFFING : COLUMN DESCRIPTIONS#1
 STRINGTABLE
 BEGIN
     IDS_COLDESC_FILENAME    "Filename or folder name."
     IDS_COLDESC_DIR         "Subfolder name when subfolders are included."
     IDS_COLDESC_RESULT      "Comparison result, long form."
+END
+
+STRINGTABLE
+BEGIN
     IDS_COLDESC_LTIMEM      "Left side modification date."
     IDS_COLDESC_RTIMEM      "Right side modification date."
     IDS_COLDESC_MTIMEM      "Middle side modification date."
@@ -2246,17 +2306,16 @@ BEGIN
     IDS_COLDESC_LSIZE_SHORT "Left file size abbreviated."
     IDS_COLDESC_RSIZE_SHORT "Right file size abbreviated."
     IDS_COLDESC_MSIZE_SHORT "Middle file size abbreviated."
-END
-
-// DIRECTORY DIFFING : COLUMN DESCRIPTIONS#2
-STRINGTABLE
-BEGIN
     IDS_COLDESC_LTIMEC      "Left side creation time."
     IDS_COLDESC_RTIMEC      "Right side creation time."
     IDS_COLDESC_MTIMEC      "Middle side creation time."
     IDS_COLDESC_NEWER       "Tells which side has newer modification date."
     IDS_COLDESC_LVERSION    "Left side file version, only for some filetypes."
     IDS_COLDESC_RVERSION    "Right side file version, only for some filetypes."
+END
+
+STRINGTABLE
+BEGIN
     IDS_COLDESC_MVERSION    "Middle side file version, only for some filetypes."
     IDS_COLDESC_RESULT_ABBR "Short comparison result."
     IDS_COLDESC_LATTRIBUTES "Left side attributes."
@@ -2267,7 +2326,6 @@ BEGIN
     IDS_COLDESC_MEOL_TYPE   "Middle side file EOL type"
 END
 
-// DIRECTORY DIFFING : COLUMN DESCRIPTIONS (2)
 STRINGTABLE
 BEGIN
     IDS_COLDESC_LENCODING   "Left side encoding."
@@ -2278,7 +2336,6 @@ BEGIN
     IDS_COLDESC_BINARY      "Shows an asterisk (*) if the file is binary."
 END
 
-// DIRECTORY DIFFING : GENERATE REPORT
 STRINGTABLE
 BEGIN
     IDS_DIRECTORY_REPORT_TITLE "Compare %1 with %2"
@@ -2288,11 +2345,14 @@ BEGIN
     IDS_REPORT_SIMPLEXML    "Simple XML"
     IDS_REPORT_FILEOVERWRITE 
                             "The report file already exists. Do you want to overwrite existing file?"
+END
+
+STRINGTABLE
+BEGIN
     IDS_REPORT_ERROR        "Error creating the report:\n%1"
     IDS_REPORT_SUCCESS      "The report has been created successfully."
 END
 
-// FILE COMPARISON RESULT : MESSAGES
 STRINGTABLE
 BEGIN
     IDS_FILE_TO_ITSELF      "The same file is opened in both panels."
@@ -2304,48 +2364,46 @@ BEGIN
     IDS_CANNOT_OPEN_BINARYFILE "Cannot open a binary file to editor."
     IDS_CREATE_PAIR_FOLDER  "The folder exists only in other side and cannot be opened.\n\nDo you want to create a matching folder:\n%1\nto the other side and open these folders?"
     IDS_MOVE_TO_NEXTFILE    "Do you want to move to the next file?"
+END
+
+STRINGTABLE
+BEGIN
     IDS_MOVE_TO_PREVFILE    "Do you want to move to the previous file?"
     IDS_MOVE_TO_NEXTPAGE    "Do you want to move to the next page?"
     IDS_MOVE_TO_PREVPAGE    "Do you want to move to the previous page?"
 END
 
-// Encoding issues
 STRINGTABLE
 BEGIN
     IDS_SUGGEST_IGNORECODEPAGE 
                             "Different codepages found in left (cp%d) and right (cp%d) files. \nDisplaying each file in its codepage will give a better display but merging/copying will be dangerous.\nWould you like to treat both files as being in the default windows codepage (recommended)?"
-    IDS_LOSSY_TRANSCODING_BOTH 
-                            "Information lost due to encoding errors: both files"
     IDS_LOSSY_TRANSCODING_FIRST 
                             "Information lost due to encoding errors: first file"
     IDS_LOSSY_TRANSCODING_SECOND 
                             "Information lost due to encoding errors: second file"
     IDS_LOSSY_TRANSCODING_THIRD 
                             "Information lost due to encoding errors: third file"
+    IDS_LOSSY_TRANSCODING_BOTH 
+                            "Information lost due to encoding errors: both files"
 END
 
-// EDITOR : SHOW LINE DIFF
 STRINGTABLE
 BEGIN
     IDS_LINEDIFF_NODIFF     "No difference"
     IDS_LINEDIFF_NODIFF_CAPTION "Line difference"
 END
 
-// EDITOR : SEARCH/REPLACE DIALOGS
 STRINGTABLE
 BEGIN
     IDS_NUM_REPLACED        "Replaced %1 string(s)."
     IDS_EDIT_TEXT_NOT_FOUND "Cannot find string ""%s"""
 END
 
-// EDITOR : MERGE MODE
 STRINGTABLE
 BEGIN
     IDS_MERGE_MODE          "You are now entering Merge Mode. If you want to turn off Merge Mode, press F11 key"
 END
 
-
-// EDITOR : AUTO MERGE
 STRINGTABLE
 BEGIN
     IDS_AUTO_MERGE          "The number of automatically merged changes: %1\nThe number of unresolved conflicts: %2"
@@ -2355,14 +2413,12 @@ BEGIN
     IDS_EOL_CONFLICT        "The changes of EOL are conflicting"
 END
 
-// FILE COMPARE: PANE CAPTIONS
 STRINGTABLE
 BEGIN
     IDS_LOCBAR_CAPTION      "Location Pane"
     IDS_DIFFBAR_CAPTION     "Diff Pane"
 END
 
-// CREATE PATCH
 STRINGTABLE
 BEGIN
     IDS_DIFF_SUCCEEDED      "Patch file successfully written."
@@ -2396,7 +2452,6 @@ BEGIN
     IDS_CLOSEALL_WINDOWS    "You are about to close several compare windows.\n\nDo you want to continue?"
 END
 
-// EOL types shown in folder compare EOL type column and in file compare statusbar
 STRINGTABLE
 BEGIN
     IDS_EOL_DOS             "Win"
@@ -2420,7 +2475,6 @@ BEGIN
     IDS_PLUGINS_TYPE_EDITSCRIPT "Editor script"
 END
 
-// EDIT MENU
 STRINGTABLE
 BEGIN
     ID_SELECTLINEDIFF       "\nDifference in the Current Line"
@@ -2428,13 +2482,16 @@ BEGIN
     ID_REFRESH              "\nRefresh (F5)"
 END
 
-// MERGE MENU
 STRINGTABLE
 BEGIN
     ID_PREVDIFF             "\nPrevious Difference (Alt+Up)"
     ID_NEXTDIFF             "\nNext Difference (Alt+Down)"
     ID_PREVCONFLICT         "\nPrevious Conflict (Alt+Shift+Up)"
     ID_NEXTCONFLICT         "\nNext Conflict (Alt+Shift+Down)"
+END
+
+STRINGTABLE
+BEGIN
     ID_FIRSTDIFF            "\nFirst Difference (Alt+Home)"
     ID_CURDIFF              "\nCurrent Difference (Alt+Enter)"
     ID_LASTDIFF             "\nLast Difference (Alt+End)"
@@ -2447,26 +2504,19 @@ BEGIN
     ID_AUTO_MERGE           "\nAuto Merge (Ctrl+Alt+M)"
 END
 
-// PLUGINS MENU
-STRINGTABLE
-BEGIN
-    IDS_UNPACK_AUTO         "The adapted unpacker is applied to both files (one file only needs the extension)"
-    IDS_NO_PREDIFFER        "No prediffer (normal)"
-    IDS_SUGGESTED_PLUGINS   "Suggested plugins"
-    IDS_NOT_SUGGESTED_PLUGINS "Other plugins"
-END
-
-// HELP MENU
 STRINGTABLE
 BEGIN
     IDS_PRIVATEBUILD_FMT    "Private Build: %1"
     IDS_CHECKFORUPDATES_UPTODATE "Your software is up to date"
     IDS_CHECKFORUPDATES_NEWVERSION 
                             "A new version of WinMerge is available.\n%1 is now available (you have %2). Would you like to download it now?"
+END
+
+STRINGTABLE
+BEGIN
     IDS_CHECKFORUPDATES_FAILED "Failed to download latest version information"
 END
 
-// PLUGINS DIALOGS AND DYNAMIC MENUS
 STRINGTABLE
 BEGIN
     IDS_TITLE_PLUGINS_SETTINGS "Plugin Settings"
@@ -2476,13 +2526,11 @@ BEGIN
     IDS_USERCHOICE_AUTOMATIC "<Automatic>"
 END
 
-// LOCATIONBAR CONTEXT MENU
 STRINGTABLE
 BEGIN
     IDS_LOCBAR_GOTOLINE_FMT "G&oto Line %1"
 END
 
-// AUTOCOMPLETE COMBOBOX OPTIONS
 STRINGTABLE
 BEGIN
     IDS_AUTOCOMPLETE_DISABLED "Disabled"
@@ -2490,7 +2538,6 @@ BEGIN
     IDS_AUTOCOMPLETE_MRU    "From MRU list"
 END
 
-// COLOR SCHEMES
 STRINGTABLE
 BEGIN
     IDS_COLORSCHEME_PLAIN   "No Highlighting"
@@ -2509,6 +2556,10 @@ BEGIN
     IDS_COLORSCHEME_JAVA    "Java"
     IDS_COLORSCHEME_LISP    "AutoLISP"
     IDS_COLORSCHEME_NSIS    "NSIS"
+END
+
+STRINGTABLE
+BEGIN
     IDS_COLORSCHEME_PASCAL  "Pascal"
     IDS_COLORSCHEME_PERL    "Perl"
     IDS_COLORSCHEME_PHP     "PHP"
@@ -2525,6 +2576,10 @@ BEGIN
     IDS_COLORSCHEME_TCL     "TCL"
     IDS_COLORSCHEME_TEX     "TEX"
     IDS_COLORSCHEME_VERILOG "Verilog"
+END
+
+STRINGTABLE
+BEGIN
     IDS_COLORSCHEME_XML     "XML"
 END
 
