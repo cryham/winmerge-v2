@@ -513,12 +513,13 @@ void CMergeEditView::GetLineColors(int nLineIndex, COLORREF & crBkgnd,
  * This version allows caller to suppress particular flags
  */
 void CMergeEditView::GetLineColors2(int nLineIndex, DWORD ignoreFlags, COLORREF & crBkgnd,
-                                COLORREF & crText, bool & bDrawWhitespace)
+                                COLORREF & crText, bool & bDrawWhitespace, bool location)
 {
 	if (GetLineCount() <= nLineIndex)
 		return;
 
 	DWORD dwLineFlags = GetLineFlags(nLineIndex);
+	bool ghost = dwLineFlags & LF_GHOST;
 
 	if (dwLineFlags & ignoreFlags)
 		dwLineFlags &= (~ignoreFlags);
@@ -532,12 +533,9 @@ void CMergeEditView::GetLineColors2(int nLineIndex, DWORD ignoreFlags, COLORREF 
 			crText = m_cachedColors.clrDiffText;
 			bDrawWhitespace = true;
 
-			if (dwLineFlags & LF_GHOST)
-			{
+			if (ghost)
 				crBkgnd = m_cachedColors.clrDiffDeleted;
-			}
-		}
-		else
+		}else
 		{
 			// If no syntax hilighting
 			if (!GetOptionsMgr()->GetBool(OPT_SYNTAX_HIGHLIGHT))
@@ -545,8 +543,7 @@ void CMergeEditView::GetLineColors2(int nLineIndex, DWORD ignoreFlags, COLORREF 
 				crBkgnd = GetColor (COLORINDEX_BKGND);
 				crText = GetColor (COLORINDEX_NORMALTEXT);
 				bDrawWhitespace = false;
-			}
-			else
+			}else
 				// Line not inside diff, get colors from CrystalEditor
 				CCrystalEditViewEx::GetLineColors(nLineIndex, crBkgnd,
 					crText, bDrawWhitespace);
@@ -571,18 +568,10 @@ void CMergeEditView::GetLineColors2(int nLineIndex, DWORD ignoreFlags, COLORREF 
 		{
 			if (lineInCurrentDiff)
 			{
-				if (dwLineFlags & LF_GHOST)
-					crBkgnd = m_cachedColors.clrSelSNPDeleted;
-				else
-					crBkgnd = m_cachedColors.clrSelSNP;
+				crBkgnd = ghost ? m_cachedColors.clrSelSNPDeleted : m_cachedColors.clrSelSNP;
 				crText = m_cachedColors.clrSelSNPText;
-			}
-			else
-			{
-				if (dwLineFlags & LF_GHOST)
-					crBkgnd = m_cachedColors.clrSNPDeleted;
-				else
-					crBkgnd = m_cachedColors.clrSNP;
+			}else{
+				crBkgnd = ghost ? m_cachedColors.clrSNPDeleted : m_cachedColors.clrSNP;
 				crText = m_cachedColors.clrSNPText;
 			}
 			return;
@@ -593,32 +582,19 @@ void CMergeEditView::GetLineColors2(int nLineIndex, DWORD ignoreFlags, COLORREF 
 			{
 				if (dwLineFlags & LF_MOVED)
 				{
-					if (dwLineFlags & LF_GHOST)
-						crBkgnd = m_cachedColors.clrSelMovedDeleted;
-					else
-						crBkgnd = m_cachedColors.clrSelMoved;
+					crBkgnd = ghost ? m_cachedColors.clrSelMovedDeleted : m_cachedColors.clrSelMoved;
 					crText = m_cachedColors.clrSelMovedText;
-				}
-				else
-				{
+				}else{
 					crBkgnd = m_cachedColors.clrSelDiff;
 					crText = m_cachedColors.clrSelDiffText;
 				}
-			
-			}
-			else
-			{
+			}else{
 				if (dwLineFlags & LF_MOVED)
 				{
-					if (dwLineFlags & LF_GHOST)
-						crBkgnd = m_cachedColors.clrMovedDeleted;
-					else
-						crBkgnd = m_cachedColors.clrMoved;
-					crText = m_cachedColors.clrMovedText;
-				}
-				else
-				{
-					crBkgnd = m_cachedColors.clrDiff;
+					crBkgnd = ghost ? m_cachedColors.clrMovedDeleted : m_cachedColors.clrMoved;
+					crText = location ? m_cachedColors.clrWordDiffText : m_cachedColors.clrMovedText;
+				}else{
+					crBkgnd = location ? m_cachedColors.clrWordDiffText : m_cachedColors.clrDiff;
 					crText = m_cachedColors.clrDiffText;
 				}
 			}
@@ -627,18 +603,15 @@ void CMergeEditView::GetLineColors2(int nLineIndex, DWORD ignoreFlags, COLORREF 
 		else if (dwLineFlags & LF_TRIVIAL)
 		{
 			// trivial diff can not be selected
-			if (dwLineFlags & LF_GHOST)
-				// ghost lines in trivial diff has their own color
-				crBkgnd = m_cachedColors.clrTrivialDeleted;
-			else
-				crBkgnd = m_cachedColors.clrTrivial;
+			// ghost lines in trivial diff has their own color
+			crBkgnd = ghost ? m_cachedColors.clrTrivialDeleted : m_cachedColors.clrTrivial;
 			crText = m_cachedColors.clrTrivialText;
 			return;
 		}
-		else if (dwLineFlags & LF_GHOST)
+		else if (ghost)
 		{
 			if (lineInCurrentDiff)
-				crBkgnd = m_cachedColors.clrSelDiffDeleted;
+				crBkgnd = location ? m_cachedColors.clrWordDiffText : m_cachedColors.clrSelDiffDeleted;
 			else
 				crBkgnd = m_cachedColors.clrDiffDeleted;
 			return;
@@ -653,8 +626,7 @@ void CMergeEditView::GetLineColors2(int nLineIndex, DWORD ignoreFlags, COLORREF 
 			crBkgnd = GetColor (COLORINDEX_BKGND);
 			crText = GetColor (COLORINDEX_NORMALTEXT);
 			bDrawWhitespace = false;
-		}
-		else
+		}else
 			// Syntax highlighting, get colors from CrystalEditor
 			CCrystalEditViewEx::GetLineColors(nLineIndex, crBkgnd,
 				crText, bDrawWhitespace);

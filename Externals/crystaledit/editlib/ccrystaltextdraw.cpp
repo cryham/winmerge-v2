@@ -143,6 +143,7 @@ MergeTextBlocks(TEXTBLOCK *pBuf1, int nBlocks1, TEXTBLOCK *pBuf2,
 	return j;
 }
 
+
 /**
  * @brief Draw a chunk of text (one color, one line, full or part of line)
  *
@@ -250,9 +251,16 @@ DrawLineHelperImpl(CDC * pdc, CPoint & ptOrigin, const CRect & rcClip,
 						pdc->SetTextColor(GetColor(nColorIndex));
 					else
 						pdc->SetTextColor(crText);
+
+					bool bck = false;
 					if (crBkgnd == CLR_NONE || nBgColorIndex & COLORINDEX_APPLYFORCE)
-						pdc->SetBkColor(GetColor(nBgColorIndex));
-					else
+					///  text backgr
+					{
+						//pdc->SetBkColor(0x505050);  ///0
+						pdc->SetBkColor(GetColor(nBgColorIndex));  ///0
+						if (nBgColorIndex != COLORINDEX_BKGND)
+							bck = true;  
+					}else
 						pdc->SetBkColor(crBkgnd);
 
 					pdc->SelectObject(GetFont(GetItalic(nColorIndex),
@@ -261,17 +269,26 @@ DrawLineHelperImpl(CDC * pdc, CPoint & ptOrigin, const CRect & rcClip,
 					RECT rcIntersect;
 					RECT rcTextBlock = { ptOrigin.x, ptOrigin.y, ptOrigin.x + nSumWidth + 2, ptOrigin.y + nLineHeight };
 					IntersectRect(&rcIntersect, &rcClip, &rcTextBlock);
+					
 					VERIFY(pdc->ExtTextOut(ptOrigin.x, ptOrigin.y, ETO_CLIPPED | ETO_OPAQUE,
 						&rcIntersect, LPCTSTR(line) + ibegin, nCount, &nWidths[0]));
+					
 					// Draw rounded rectangles around control characters
 					pdc->SaveDC();
 					pdc->IntersectClipRect(&rcClip);
+					
 					HDC hDC = pdc->m_hDC;
 					HGDIOBJ hBrush = ::GetStockObject(NULL_BRUSH);
 					hBrush = ::SelectObject(hDC, hBrush);
-					HGDIOBJ hPen = ::CreatePen(PS_SOLID, 1, ::GetTextColor(hDC));
+					HGDIOBJ hPen = ::CreatePen(PS_SOLID, 1, 0xC0C0C0);//::GetTextColor(hDC));
 					hPen = ::SelectObject(hDC, hPen);
 					int x = ptOrigin.x;
+					
+					/// Draw Frame []
+					if (bck)
+					//	Rectangle(hDC, ptOrigin.x, ptOrigin.y, ptOrigin.x + nSumWidth, ptOrigin.y + nLineHeight);
+						Rectangle(hDC, ptOrigin.x-1, ptOrigin.y, ptOrigin.x + nSumWidth, ptOrigin.y + nLineHeight);
+
 					for (int j = 0; j < nCount; ++j)
 					{
 						// Assume narrowed space is converted escape sequence leadin.
@@ -308,6 +325,7 @@ DrawLineHelper(CDC * pdc, CPoint & ptOrigin, const CRect & rcClip, int nColorInd
 {
 	if (nCount > 0)
 	{
+		//crBkgnd = 0x505050;  ///0
 		if (m_bFocused || m_bShowInactiveSelection)
 		{
 			int nSelBegin = 0, nSelEnd = 0;
@@ -425,6 +443,8 @@ void CCrystalTextView::DrawScreenLine(CDC *pdc, CPoint &ptOrigin, const CRect &r
 	frect.bottom = frect.top + nLineHeight;
 
 	ASSERT(nActualItem < nBlocks);
+	
+	//crBkgnd = 0x505050;  ///0  rest of line ++
 
 	if (nBlocks > 0 && nActualItem < nBlocks - 1 &&
 		pBuf[nActualItem + 1].m_nCharPos >= nOffset &&
@@ -468,6 +488,7 @@ void CCrystalTextView::DrawScreenLine(CDC *pdc, CPoint &ptOrigin, const CRect &r
 						clrBkColor = GetColor(nBgColorIndex);
 					else
 						clrBkColor = crBkgnd;
+
 					pdc->FillSolidRect(ptOrigin.x, ptOrigin.y, ZEROWIDTHBLOCK_WIDTH, GetLineHeight(), clrBkColor);
 					ptOriginZeroWidthBlock = ptOrigin;
 					nBgColorIndexZeorWidthBlock = pBuf[I].m_nBgColorIndex;
@@ -552,6 +573,7 @@ void CCrystalTextView::DrawScreenLine(CDC *pdc, CPoint &ptOrigin, const CRect &r
 }
 //END SW
 
+
 void CCrystalTextView::
 DrawSingleLine(CDC * pdc, const CRect & rc, int nLineIndex)
 {
@@ -569,6 +591,7 @@ DrawSingleLine(CDC * pdc, const CRect & rc, int nLineIndex)
 	bool bDrawWhitespace = false;
 	COLORREF crBkgnd, crText;
 	GetLineColors(nLineIndex, crBkgnd, crText, bDrawWhitespace);
+	//crBkgnd = 0x505050;  ///0
 
 	int nLength = GetViewableLineLength(nLineIndex);
 	LPCTSTR pszChars = GetLineChars(nLineIndex);

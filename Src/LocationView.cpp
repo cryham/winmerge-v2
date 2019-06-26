@@ -477,7 +477,7 @@ void CLocationView::OnDraw(CDC* pDC)
 						DrawRect(&dc, r, RGB(100, 0, 0), false);
 				}
 				// Draw block
-				m_view[pane]->GetLineColors2((*iter).top_line, 0, cr[pane], crt, bwh);
+				m_view[pane]->GetLineColors2((*iter).top_line, 0, cr[pane], crt, bwh, true);
 				CRect r(m_bar[pane].left, (*iter).top_coord, m_bar[pane].right, (*iter).bottom_coord);
 				DrawRect(&dc, r, cr[pane], bInsideDiff);
 			}

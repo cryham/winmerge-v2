@@ -137,8 +137,8 @@ public:
 	virtual COLORREF GetColor(int nColorIndex);
 	virtual void GetLineColors (int nLineIndex, COLORREF & crBkgnd,
 			COLORREF & crText, bool & bDrawWhitespace);
-	virtual void GetLineColors2 (int nLineIndex, DWORD ignoreFlags
-		, COLORREF & crBkgnd, COLORREF & crText, bool & bDrawWhitespace);
+	virtual void GetLineColors2 (int nLineIndex, DWORD ignoreFlags,
+		    COLORREF & crBkgnd, COLORREF & crText, bool & bDrawWhitespace, bool location=false);
 	void WMGoto() { OnWMGoto(); };
 	void GotoLine(UINT nLine, bool bRealLine, int pane);
 	int GetTopLine() const { return m_nTopLine; }
